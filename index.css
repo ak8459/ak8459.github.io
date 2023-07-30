@@ -8,15 +8,6 @@
 
 .container {
 }
-/* #nav-menu {
-  padding: 35px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border: 1px solid red;
-  background-color: aquamarine;
-}
 
 #nav-menu > .nav-links {
   display: flex;
@@ -35,23 +26,24 @@
 }
 .hr-line {
   border: 0.011rem solid black;
-} */
-
+}
 #nav-menu {
   overflow: hidden;
-  /* background-color: #d1c2c2; */
   position: fixed;
   top: 0;
   width: 100%;
   padding: 30px;
-  box-shadow: rgba(183, 128, 128, 0.4) 0px 30px 90px;
-  background-color: rgb(247, 255, 255);
+  /* box-shadow: rgba(183, 128, 128, 0.4) 0px 30px 90px; */
+  /* background-color: rgb(245, 248, 248); */
 }
 
 #nav-menu {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
+  border-bottom-style: solid;
+  border-bottom-color: #1c1a1a;
+  border-bottom-width: 1px;
 }
 
 #nav-menu a {
@@ -64,8 +56,42 @@
   font-family: "Lumanosimo", cursive;
 }
 
-.navbar-scroll-up {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  /* Replace with the color you want when scrolling up */
-  /* Add any other styles you want when scrolling up */
+/* home-section css */
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lumanosimo", cursive;
+  text-align: center;
+  width: 100%;
+}
+
+.title h1 {
+  position: relative;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0 0 30px #000155;
+}
+/* .title h1 {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: #bbb;
+} */
+
+.title h2 {
+  font-weight: 200;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  line-height: 3;
+  color: #eeeeee;
+  letter-spacing: 2px;
+  text-shadow: 0 0 30рх #000155;
 }
