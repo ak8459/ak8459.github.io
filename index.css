@@ -151,7 +151,7 @@
 }
 
 /* skills section */
-#skills > h1 {
+#skill-container > h1 {
   text-align: center;
   font-size: 45px;
   color: #bbb;
