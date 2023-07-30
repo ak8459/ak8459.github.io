@@ -186,7 +186,7 @@ let techArray = [{
     // }
 ]
 
-const skill_container = document.querySelector( ".skills-container" );
+const skill_container = document.querySelector( "#skills" );
 
 
 function createElement() {
