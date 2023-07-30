@@ -154,3 +154,60 @@ function update() {
     requestAnimationFrame( update.bind( this ) );
 }
 update();
+
+
+let techArray = [{
+    name: "HTML",
+    icon: "./images/html-logo.png"
+},
+{
+    name: "CSS",
+    icon: "./images/css-logo.png"
+},
+{
+    name: "JavaScript",
+    icon: "./images/js-logo.png"
+},
+{
+    name: "React",
+    icon: "./images/react-logo.png"
+},
+{
+    name: "npm",
+    icon: "./images/npm-logo.png"
+},
+{
+    name: "GitHub",
+    icon: "./images/github-logo.png"
+},
+    // {
+    //     name: "C",
+    //     icon: "./images/c-logo.png"
+    // }
+]
+
+const skill_container = document.querySelector( ".skills-container" );
+
+
+function createElement() {
+    skill_container.innerHTML = '';
+    techArray.forEach( element => {
+        const card = document.createElement( "div" );
+        card.classList.add( "skills-card" );
+
+        let image = document.createElement( "img" );
+        image.src = element.icon;
+        image.classList.add( "skills-card-img" );
+
+        let name = document.createElement( "p" );
+        name.textContent = element.name;
+        name.classList.add( "skills-card-name" );
+
+        card.append( image, name );
+        skill_container.append( card );
+    } )
+}
+
+
+createElement();
+// console.log( card );
