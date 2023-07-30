@@ -1,4 +1,4 @@
-let max_particles = 2500;
+let max_particles = 1000;
 let particles = [];
 let frequency = 10;
 let init_num = max_particles;
@@ -16,10 +16,10 @@ setTimeout(
 // Popolate particles
 popolate( max_particles );
 
-var tela = document.createElement( "canvas" );
+let tela = document.createElement( "canvas" );
 tela.width = $( window ).width();
 tela.height = $( window ).height();
-$( "body" ).append( tela );
+$( "#canvas" ).append( tela );
 
 var canvas = tela.getContext( "2d" );
 
@@ -29,8 +29,8 @@ class Particle {
         this.progress = 0;
         this.canvas = canvas;
         this.center = {
-            x: $( window ).width() / 2,
-            y: $( window ).height() / 2
+            x: $( window ).width(),
+            y: $( window ).height()
         };
 
         this.point_of_attraction = {
@@ -147,7 +147,7 @@ function update() {
     if ( time_to_recreate ) {
         if ( particles.length < init_num ) {
             popolate( 1 );
-            console.log( "Ricreo" );
+            // console.log( "Ricreo" );
         }
     }
     clear();
