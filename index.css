@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+}
+/* #nav-menu {
+  padding: 35px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid red;
+  background-color: aquamarine;
+}
+
+#nav-menu > .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Lumanosimo", cursive;
+  display: block;
+  float: right;
+}
+.hr-line {
+  border: 0.011rem solid black;
+} */
+
+#nav-menu {
+  overflow: hidden;
+  /* background-color: #d1c2c2; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  box-shadow: rgba(183, 128, 128, 0.4) 0px 30px 90px;
+  background-color: rgb(247, 255, 255);
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+#nav-menu a {
+  float: right;
+  display: block;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Lumanosimo", cursive;
+}
+
+.navbar-scroll-up {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  /* Replace with the color you want when scrolling up */
+  /* Add any other styles you want when scrolling up */
+}
