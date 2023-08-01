@@ -216,14 +216,39 @@ createElement();
 
 // Projects section
 
-let projectsArray = [{
-    image: "./project-assest/edukin.png",
-    Title: "Edukin",
-    description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-    techStack: "HTML, CSS, JavaScript",
-    githubLink: "https://ak8459.github.io/Edukin/",
-    liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
-}]
+let projectsArray = [
+    {
+        image: "./project-assest/edukin.png",
+        Title: "Edukin",
+        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+        techStack: "HTML, CSS, JavaScript",
+        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
+        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+    },
+    {
+        image: "./project-assest/edukin.png",
+        Title: "Edukin",
+        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+        techStack: "HTML, CSS, JavaScript",
+        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
+        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+    }, {
+        image: "./project-assest/edukin.png",
+        Title: "Edukin",
+        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+        techStack: "HTML, CSS, JavaScript",
+        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
+        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+    }, {
+        image: "./project-assest/edukin.png",
+        Title: "Edukin",
+        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+        techStack: "HTML, CSS, JavaScript",
+        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
+        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+    }
+
+]
 
 const projects_container = document.querySelector( "#projects" );
 
