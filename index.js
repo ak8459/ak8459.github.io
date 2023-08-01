@@ -156,6 +156,8 @@ function update() {
 update();
 
 
+
+// tec section
 let techArray = [{
     name: "HTML",
     icon: "./images/html-logo.png"
@@ -208,6 +210,63 @@ function createElement() {
     } )
 }
 
-
 createElement();
-// console.log( card );
+
+
+
+// Projects section
+
+let projectsArray = [{
+    image: "./project-assest/edukin.png",
+    Title: "Edukin",
+    description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+    techStack: "HTML, CSS, JavaScript",
+    githubLink: "https://ak8459.github.io/Edukin/",
+    liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+}]
+
+const projects_container = document.querySelector( "#projects" );
+
+function createProjectsCards() {
+    projects_container.innerHTML = '';
+    projectsArray.forEach( element => {
+        const card = document.createElement( "div" );
+        card.classList.add( "project-card" );
+
+        let image = document.createElement( "img" );
+        image.src = element.image;
+
+        let title = document.createElement( "p" );
+        title.textContent = element.Title;
+        title.classList.add( "project-title" );
+
+        let description = document.createElement( "p" );
+        description.textContent = element.description;
+        description.classList.add( "project-description" );
+
+        let tech_stack = document.createElement( "p" );
+        tech_stack.textContent = element.techStack;
+        tech_stack.classList.add( "project-tech-stack" );
+
+        let projectLink = document.createElement( "a" );
+        projectLink.href = element.liveLink;
+        projectLink.textContent = "Live";
+        projectLink.target = "_blank";
+        projectLink.classList.add( "project-deployed-link" );
+
+        let githubLink = document.createElement( "a" );
+        githubLink.href = element.githubLink;
+        githubLink.textContent = "Github";
+        githubLink.target = "_blank";
+        githubLink.classList.add( "project-github-link" );
+
+        card.append( image, title, description, tech_stack, projectLink, githubLink );
+        projects_container.append( card );
+    } )
+}
+
+createProjectsCards()
+
+console.log(
+    projects_container
+)
