@@ -261,7 +261,7 @@ function createProjectsCards() {
         let image = document.createElement( "img" );
         image.src = element.image;
 
-        let title = document.createElement( "p" );
+        let title = document.createElement( "h3" );
         title.textContent = element.Title;
         title.classList.add( "project-title" );
 
@@ -290,7 +290,7 @@ function createProjectsCards() {
     } )
 }
 
-createProjectsCards()
+// createProjectsCards()
 
 console.log(
     projects_container
