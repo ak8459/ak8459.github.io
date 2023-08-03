@@ -1,4 +1,4 @@
-let max_particles = 1000;
+let max_particles = 2000;
 let particles = [];
 let frequency = 10;
 let init_num = max_particles;
@@ -29,8 +29,8 @@ class Particle {
         this.progress = 0;
         this.canvas = canvas;
         this.center = {
-            x: $( window ).width(),
-            y: $( window ).height()
+            x: $( window ).width() /2,
+            y: $( window ).height() /2
         };
 
         this.point_of_attraction = {
@@ -226,27 +226,16 @@ let projectsArray = [
         liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
     },
     {
-        image: "./project-assest/edukin.png",
-        Title: "Edukin",
-        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-        techStack: "HTML, CSS, JavaScript",
-        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
-        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
-    }, {
-        image: "./project-assest/edukin.png",
-        Title: "Edukin",
-        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-        techStack: "HTML, CSS, JavaScript",
-        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
-        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
-    }, {
-        image: "./project-assest/edukin.png",
-        Title: "Edukin",
-        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-        techStack: "HTML, CSS, JavaScript",
-        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
-        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
-    }
+        image:"./project-assest/growskill.png",
+        Title: "Grow Skill",
+        description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow. People can enroll into various courses and learn different skills.This is an individual project build within 5 days.",
+        techStack: "HTML, CSS, JavaScript, React",
+        githubLink: "https://github.com/ak8459/casual-insurance-3102/tree/main",
+        liveLink: "https://64cbd52977969a1a2e5ce78f--comfy-alpaca-588b63.netlify.app/",
+
+    },
+
+    
 
 ]
 
@@ -290,7 +279,7 @@ function createProjectsCards() {
     } )
 }
 
-// createProjectsCards()
+createProjectsCards()
 
 console.log(
     projects_container
