@@ -42,7 +42,7 @@
   font-size: 20px;
 }
 
-#resume-link-2 {
+#resume-link-1 {
   align-items: center;
   background: #ffffff;
   border: 0 solid #e2e8f0;
@@ -72,7 +72,7 @@
   transition: background-color 1s ease-out;
 }
 
-#resume-link-2:hover {
+#resume-link-1:hover {
   color: whitesmoke;
   background-color: #00aff0;
   cursor: pointer;
