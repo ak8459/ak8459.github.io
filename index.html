@@ -1,121 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="index.css"
-    />
-    <title>Profile</title>
-  </head>
-  <body>
-    <section id="canvas"></section>
-    <section class="container">
-      <nav id="nav-menu">
-        <a
-          class="nav-link home"
-          href="#home"
-          >Home</a
-        >
-        <a
-          class="nav-link about"
-          href="#about"
-          >About</a
-        >
-        <a
-          class="nav-link skills"
-          href="#skills"
-          >Skills</a
-        >
-        <a
-          class="nav-link projects"
-          href="#projects"
-          >Projects</a
-        >
-        <a
-          class="nav-link contact"
-          href="#contact"
-          >Contact</a
-        >
-        <a
-          class="nav-link resume"
-          href="#"
-          id="resume-link-1"
-          target="_blank"
-          >Resume</a
-        >
-      </nav>
-    </section>
 
-    <!-- home-section -->
-    <div
-      id="home"
-      class="title"
-    >
-      <h1 id="user-detail-name">AKASH SHARMA</h1>
-      <h2>Full Stack Developer</h2>
-      <a
-        class="nav-link resume"
-        href="#"
-        id="resume-link-2"
-        target="_blank"
-        >Resume <i class="fa-solid fa-download"></i
-      ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Profile</title>
+</head>
+
+<body>
+  <section id="canvas"></section>
+  <section class="container">
+    <nav id="nav-menu">
+      <a class="nav-link home" href="#home">Home</a>
+      <a class="nav-link about" href="#about">About</a>
+      <a class="nav-link skills" href="#skills">Skills</a>
+      <a class="nav-link projects" href="#projects">Projects</a>
+      <a class="nav-link contact" href="#contact">Contact</a>
+      <a class="nav-link resume" href="#" id="resume-link-1" target="_blank">Resume</a>
+    </nav>
+  </section>
+
+  <!-- home-section -->
+  <div id="home" class="title">
+    <h1 id="user-detail-name">AKASH SHARMA</h1>
+    <h2>Full Stack Developer</h2>
+    <a class="nav-link resume" href="#" id="resume-link-2" target="_blank">Resume <i
+        class="fa-solid fa-download"></i></a>
+  </div>
+
+  <!-- about-section -->
+  <section id="about" class="about section">
+    <h1>About Me</h1>
+    <div class="img-container">
+      <img class="home-img" src="profile.jpg" alt="" />
     </div>
-
-    <!-- about-section -->
-    <section
-      id="about"
-      class="about section"
-    >
-      <h1>About Me</h1>
-      <div class="img-container">
-        <img
-          class="home-img"
-          src="profile.jpg"
-          alt=""
-        />
-      </div>
-      <div class="my-story">
-        <p id="user-detail-intro">
-          Hello! I am a passionate and dedicated Full-Stack Developer with a
-          keen interest in creating innovative web applications and digital
-          experiences.As a continuous learner,Passionate about creating clean
-          and efficient code, I always strive for optimized performance and
-          maintainability.I have completed my Bachelor of Computer Application
-          from Chaudhary Charan Singh University, Uttar Pradesh.
-        </p>
-      </div>
-    </section>
-
-    <!-- skill-section -->
-    <div id="skill-container">
-      <h1>Technical Skills</h1>
-      <div id="skills"></div>
+    <div class="my-story">
+      <p id="user-detail-intro">
+        Hello! I am a passionate and dedicated Full-Stack Developer with a
+        keen interest in creating innovative web applications and digital
+        experiences.As a continuous learner,Passionate about creating clean
+        and efficient code, I always strive for optimized performance and
+        maintainability.I have completed my Bachelor of Computer Application
+        from Chaudhary Charan Singh University, Uttar Pradesh.
+      </p>
     </div>
+  </section>
 
-    <!-- projects-section -->
-    <section id="project-container">
-      <h1>My Projects</h1>
-      <div id="projects">
-      </div>
-    </section>
-   
-    
-  </body>
+  <!-- skill-section -->
+  <div id="skill-container">
+    <h1>Technical Skills</h1>
+    <div id="skills"></div>
+  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js"></script>
-  <script
-    src="https://kit.fontawesome.com/857cd95f0d.js"
-    crossorigin="anonymous"
-  ></script>
+  <!-- projects-section -->
+  <section>
+    <h1>My Projects</h1>
+    <div id="projects">
+    </div>
+  </section>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/857cd95f0d.js" crossorigin="anonymous"></script>
+
 </html>

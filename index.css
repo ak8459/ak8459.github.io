@@ -202,3 +202,15 @@
 .skills-card:hover .skills-card-name {
   color: #00aff0;
 }
+
+
+#projects{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+
+}
+
+ .project-card img{
+  width: 90%;
+}  
