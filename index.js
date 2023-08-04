@@ -26,12 +26,14 @@ class Particle {
     this.progress = 0;
     this.canvas = canvas;
     this.center = {
-      x: $(window).width() ,
-      y: $(window).height() / 2 };
+      x: $(window).width(),
+      y: $(window).height() / 2
+    };
 
     this.point_of_attraction = {
       x: $(window).width() / 2,
-      y: $(window).height() / 2 };
+      y: $(window).height() / 2
+    };
 
 
 
@@ -74,7 +76,8 @@ class Particle {
 
     let p1 = {
       x: this.x,
-      y: this.y };
+      y: this.y
+    };
 
 
     let distance = this.calculateDistance(p1, this.point_of_attraction);
@@ -94,19 +97,20 @@ class Particle {
     this.render();
     this.progress++;
     return true;
-  }}
+  }
+}
 
 
 function popolate(num) {
   for (var i = 0; i < num; i++) {
     setTimeout(
-    function (x) {
-      return function () {
-        // Add particle
-        particles.push(new Particle(canvas));
-      };
-    }(i),
-    frequency * i);
+      function (x) {
+        return function () {
+          // Add particle
+          particles.push(new Particle(canvas));
+        };
+      }(i),
+      frequency * i);
   }
   return particles.length;
 }
@@ -115,7 +119,8 @@ function createSphera() {
   let radius = 180;
   let center = {
     x: $(window).width() / 2,
-    y: $(window).height() / 2 };
+    y: $(window).height() / 2
+  };
 
 }
 
@@ -130,10 +135,10 @@ function clear() {
  * Function to update particles in canvas
  */
 function update() {
-  particles = particles.filter(function (p) {return p.move();});
+  particles = particles.filter(function (p) { return p.move(); });
   // Recreate particles
   if (time_to_recreate) {
-    if (particles.length < init_num) {popolate(1);console.log("Ricreo");}
+    if (particles.length < init_num) { popolate(1); console.log("Ricreo"); }
   }
   clear();
   requestAnimationFrame(update.bind(this));
@@ -143,55 +148,55 @@ update();
 
 // tec section
 let techArray = [{
-    name: "HTML",
-    icon: "./images/html-logo.png"
+  name: "HTML",
+  icon: "./images/html-logo.png"
 },
 {
-    name: "CSS",
-    icon: "./images/css-logo.png"
+  name: "CSS",
+  icon: "./images/css-logo.png"
 },
 {
-    name: "JavaScript",
-    icon: "./images/js-logo.png"
+  name: "JavaScript",
+  icon: "./images/js-logo.png"
 },
 {
-    name: "React",
-    icon: "./images/react-logo.png"
+  name: "React",
+  icon: "./images/react-logo.png"
 },
 {
-    name: "npm",
-    icon: "./images/npm-logo.png"
+  name: "npm",
+  icon: "./images/npm-logo.png"
 },
 {
-    name: "GitHub",
-    icon: "./images/github-logo.png"
+  name: "GitHub",
+  icon: "./images/github-logo.png"
 },
-    // {
-    //     name: "C",
-    //     icon: "./images/c-logo.png"
-    // }
+  // {
+  //     name: "C",
+  //     icon: "./images/c-logo.png"
+  // }
 ]
 
 const skill_container = document.querySelector("#skills");
 
 
 function createElement() {
-    skill_container.innerHTML = '';
-    techArray.forEach(element => {
-        const card = document.createElement("div");
-        card.classList.add("skills-card");
+  skill_container.innerHTML = '';
+  techArray.forEach(element => {
+    const card = document.createElement("div");
+    card.classList.add("skills-card");
 
-        let image = document.createElement("img");
-        image.src = element.icon;
-        image.classList.add("skills-card-img");
+    let image = document.createElement("img");
+    image.src = element.icon;
+    image.classList.add("skills-card-img");
 
-        let name = document.createElement("p");
-        name.textContent = element.name;
-        name.classList.add("skills-card-name");
+    let name = document.createElement("p");
+    name.textContent = element.name;
+    name.classList.add("skills-card-name");
 
-        card.append(image, name);
-        skill_container.append(card);
-    })
+    card.append(image, name);
+    skill_container.append(card);
+  })
 }
 
 createElement();
@@ -201,23 +206,23 @@ createElement();
 // Projects section
 
 let projectsArray = [
-    {
-        image: "./project-assest/edukin.png",
-        Title: "Edukin",
-        description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-        techStack: "HTML, CSS, JavaScript",
-        githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
-        liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
-    },
-    {
-        image: "./project-assest/growskill.png",
-        Title: "Grow Skill",
-        description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow. People can enroll into various courses and learn different skills.This is an individual project build within 5 days.",
-        techStack: "HTML, CSS, JavaScript, React",
-        githubLink: "https://github.com/ak8459/casual-insurance-3102/tree/main",
-        liveLink: "https://64cbd52977969a1a2e5ce78f--comfy-alpaca-588b63.netlify.app/",
+  {
+    image: "./project-assest/edukin.png",
+    Title: "Edukin",
+    description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
+    techStack: "HTML, CSS, JavaScript",
+    githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
+    liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
+  },
+  {
+    image: "./project-assest/growskill.png",
+    Title: "Grow Skill",
+    description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow. People can enroll into various courses and learn different skills.This is an individual project build within 5 days.",
+    techStack: "HTML, CSS, JavaScript, React",
+    githubLink: "https://github.com/ak8459/casual-insurance-3102/tree/main",
+    liveLink: "https://64cbd52977969a1a2e5ce78f--comfy-alpaca-588b63.netlify.app/",
 
-    }
+  }
 
 
 
@@ -226,41 +231,41 @@ let projectsArray = [
 const projects_container = document.querySelector("#projects");
 
 function createProjectsCards() {
-    projects_container.innerHTML = '';
-    projectsArray.forEach(element => {
-        const card = document.createElement("div");
-        card.classList.add("project-card");
+  projects_container.innerHTML = '';
+  projectsArray.forEach(element => {
+    const card = document.createElement("div");
+    card.classList.add("project-card");
 
-        let image = document.createElement("img");
-        image.src = element.image;
+    let image = document.createElement("img");
+    image.src = element.image;
 
-        let title = document.createElement("h3");
-        title.textContent = element.Title;
-        title.classList.add("project-title");
+    let title = document.createElement("h3");
+    title.textContent = element.Title;
+    title.classList.add("project-title");
 
-        let description = document.createElement("p");
-        description.textContent = element.description;
-        description.classList.add("project-description");
+    let description = document.createElement("p");
+    description.textContent = element.description;
+    description.classList.add("project-description");
 
-        let tech_stack = document.createElement("p");
-        tech_stack.textContent = element.techStack;
-        tech_stack.classList.add("project-tech-stack");
+    let tech_stack = document.createElement("p");
+    tech_stack.textContent = element.techStack;
+    tech_stack.classList.add("project-tech-stack");
 
-        let projectLink = document.createElement("a");
-        projectLink.href = element.liveLink;
-        projectLink.textContent = "Live";
-        projectLink.target = "_blank";
-        projectLink.classList.add("project-deployed-link");
+    let projectLink = document.createElement("a");
+    projectLink.href = element.liveLink;
+    projectLink.textContent = "Live";
+    projectLink.target = "_blank";
+    projectLink.classList.add("project-deployed-link");
 
-        let githubLink = document.createElement("a");
-        githubLink.href = element.githubLink;
-        githubLink.textContent = "Github";
-        githubLink.target = "_blank";
-        githubLink.classList.add("project-github-link");
+    let githubLink = document.createElement("a");
+    githubLink.href = element.githubLink;
+    githubLink.textContent = "Github";
+    githubLink.target = "_blank";
+    githubLink.classList.add("project-github-link");
 
-        card.append(image, title, description, tech_stack, projectLink, githubLink);
-        projects_container.append(card);
-    })
+    card.append(image, title, description, tech_stack, projectLink, githubLink);
+    projects_container.append(card);
+  })
 }
 
 createProjectsCards()

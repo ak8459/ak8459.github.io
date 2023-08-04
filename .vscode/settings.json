@@ -1,0 +1,5 @@
+{
+    "html.format.enable": true,
+    "cSpell.autoFormatConfigFile": true,
+    "editor.formatOnSave": true
+}
