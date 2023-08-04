@@ -120,7 +120,7 @@ function createSphera() {
 }
 
 function clear() {
-  canvas.globalAlpha = 0.08;
+  canvas.globalAlpha = 0.07;
   canvas.fillStyle = '#110031';
   canvas.fillRect(0, 0, tela.width, tela.height);
   canvas.globalAlpha = 1;
@@ -265,6 +265,3 @@ function createProjectsCards() {
 
 createProjectsCards()
 
-console.log(
-    projects_container
-)

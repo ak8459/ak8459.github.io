@@ -126,13 +126,32 @@
 /* about section */
 #about {
   text-align: center;
-  line-height: 1.9;
+  margin-top: 50px;
 }
-#about h1 {
+/* #about h1 {
   font-size: 45px;
   color: #00A4BD;
+ 
+  margin-bottom: 20px; 
+} */
+
+.psection > h1{
+  font-size: 45px;
+  color: #00A4BD;
+  text-align: center;
+  margin-bottom: 25px; 
 }
 
+.psection{
+  margin-top: 45px;
+}
+
+
+
+#user-detail-intro{
+  margin-top: 8px;
+  line-height: 1.6;
+}
 .img-container {
   display: inline-block;
   border-radius: 50%;
@@ -153,16 +172,18 @@
 }
 
 /* skills section */
-#skill-container > h1 {
+/* #skill-container{
+  margin-top: 40px;
+} */
+/* #skill-container > h1 {
   text-align: center;
   font-size: 45px;
   color: #00A4BD;
-  line-height: 2;
-}
+  
+} */
 #skills {
   width: 80%;
   display: grid;
-  /* border: 1px solid red; */
   grid-template-columns: auto auto auto;
   margin: auto;
   row-gap: 20px;
@@ -203,6 +224,11 @@
   color: #00aff0;
 }
 
+/* project section */
+#project-section{
+margin-top: 50px;
+}
+
 
 #projects{
   display: grid;
@@ -210,7 +236,23 @@
   margin: auto;
 
 }
-
  .project-card img{
   width: 90%;
-}  
+} 
+
+#git-calendar{
+  margin: auto;
+  text-align: center;
+}
+
+/* #git-calendar >h1{
+  text-align: center;
+  font-size: 45px;
+  color: #00A4BD;
+  line-height: 2;
+  margin-bottom: 19px;
+} */
+.calendar{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
