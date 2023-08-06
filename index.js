@@ -1,3 +1,21 @@
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+      $("#nav-menu").css("background", "white");
+      let k = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px"
+      $("#nav-menu").css("box-shadow", k);
+      $("#nav-menu > a").css("color", "#00A4BD");
+    }
+
+    else {
+      $("#nav-menu").css("background", "");
+    }
+  })
+})
+
+
 let max_particles = 2500;
 let particles = [];
 let frequency = 10;
@@ -144,6 +162,9 @@ function update() {
   requestAnimationFrame(update.bind(this));
 }
 update();
+
+
+
 
 
 // tec section
