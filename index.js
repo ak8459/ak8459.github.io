@@ -11,7 +11,10 @@ $(document).ready(function () {
 
     else {
       $("#nav-menu").css("background", "");
+      // $("#nav-menu > a").css("color", "white");
+      // $("#nav-menu > a").css("hover", "#00A4BD");
     }
+
   })
 })
 
@@ -230,19 +233,26 @@ let projectsArray = [
   {
     image: "./project-assest/edukin.png",
     Title: "Edukin",
-    description: "Edukin is an online learning skill-enhancing website. Edukin provides various courses for kids e.g. Music, Programming, Dance, etc. This is a collaborative project built by a team of four members in five days.",
-    techStack: "HTML, CSS, JavaScript",
+    description: "Edukin is an online learning skill-enhancing website. This is a collaborative project built by a team of four members in five days.",
+    techStack: "HTML||CSS||JavaScript",
     githubLink: "https://github.com/ak8459/mushy-apparatus-2910",
     liveLink: "https://gleaming-rabanadas-c8636b.netlify.app/"
   },
   {
     image: "./project-assest/growskill.png",
     Title: "Grow Skill",
-    description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow. People can enroll into various courses and learn different skills.This is an individual project build within 5 days.",
-    techStack: "HTML, CSS, JavaScript, React",
+    description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow.This is an individual project build within 5 days.",
+    techStack: "HTML||CSS||JavaScript||React",
     githubLink: "https://github.com/ak8459/casual-insurance-3102/tree/main",
     liveLink: "https://64cbd52977969a1a2e5ce78f--comfy-alpaca-588b63.netlify.app/",
 
+  }, {
+    image: "./project-assest/skin-store.png",
+    Title: "Skin Store",
+    description: "SkinStore offers premium beauty products like lipstick, Eyeliners, and many more products with the latest in innovative clinical skincare and luxury spa products.",
+    techStack: "HTML||CSS||JavaScript",
+    githubLink: "https://github.com/pravindnikam07/Skin-Store-Clone",
+    liveLink: "http://127.0.0.1:5501/SkinStoreCloneFinal/index.html"
   }
 
 
