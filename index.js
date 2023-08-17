@@ -251,8 +251,8 @@ let projectsArray = [
     Title: "Skin Store",
     description: "SkinStore offers premium beauty products like lipstick, Eyeliners, and many more products with the latest in innovative clinical skincare and luxury spa products.",
     techStack: "HTML||CSS||JavaScript",
-    githubLink: "https://github.com/pravindnikam07/Skin-Store-Clone",
-    liveLink: "http://127.0.0.1:5501/SkinStoreCloneFinal/index.html"
+    githubLink: "https://github.com/ak8459/skin-store",
+    liveLink: "https://64ddf1ed8d235c6837b45962--funny-choux-6cf3c5.netlify.app/"
   }
 
 
