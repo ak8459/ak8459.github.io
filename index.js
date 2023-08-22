@@ -241,7 +241,7 @@ let projectsArray = [
   {
     image: "./project-assest/growskill.png",
     Title: "Grow Skill",
-    description: "Grow Skill is an online learning website. It has diverse range of subjects and topics available for people to learn and grow.This is an individual project build within 5 days.",
+    description: "Grow Skill is an online learning website. It has diverse range of subjects available for people to learn and grow.This is an individual project build within 5 days.",
     techStack: "HTML||CSS||JavaScript||React",
     githubLink: "https://github.com/ak8459/casual-insurance-3102/tree/main",
     liveLink: "https://64cbd52977969a1a2e5ce78f--comfy-alpaca-588b63.netlify.app/",
@@ -250,7 +250,7 @@ let projectsArray = [
     image: "./project-assest/skin-store.png",
     Title: "Skin Store",
     description: "SkinStore offers premium beauty products like lipstick, Eyeliners, and many more products with the latest in innovative clinical skincare and luxury spa products.",
-    techStack: "HTML||CSS||JavaScript",
+    techStack: "HTML ||CSS||JavaScript",
     githubLink: "https://github.com/ak8459/skin-store",
     liveLink: "https://skinstoreclone.netlify.app/"
   }

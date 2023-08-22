@@ -237,7 +237,6 @@
   display: grid;
   grid-template-columns: auto auto;
   margin: auto;
-  border: 1px solid #00A4BD;
   width: 80%;
   gap: 15px;
 }
@@ -245,10 +244,28 @@
 .project-card {
   border: 1px solid red;
   padding: 8px;
+  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-
-
+  border-radius: 5px;
+  line-height: 1.6;
 }
+
+.project-title {
+  font-size: 21px;
+}
+
+
+.project-github-link,
+.project-deployed-link {
+  text-decoration: none;
+  border: 2px solid gray;
+  margin: 12px;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
 
 .project-card img {
   width: 100%;
@@ -261,13 +278,6 @@
   text-align: center;
 }
 
-/* #git-calendar >h1{
-  text-align: center;
-  font-size: 45px;
-  color: #00A4BD;
-  line-height: 2;
-  margin-bottom: 19px;
-} */
 .calendar {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -347,4 +357,36 @@
 
   font-size: 32px;
 
+}
+
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  #nav-menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a202c;
+    /* Change background color for mobile view */
+    padding: 15px;
+  }
+
+  #nav-menu a {
+    margin: 10px 0;
+    float: none;
+  }
+
+  #nav-menu a:hover {
+    /* Adjust hover styles for mobile view */
+  }
+
+  #resume-link-1 {
+    width: 100%;
+    /* Full width for mobile view */
+    text-align: center;
+  }
+
+  .fa-solid {
+    margin: 0;
+  }
 }
