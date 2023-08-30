@@ -428,7 +428,7 @@ section {
     border-color: rgb(163, 163, 163);
     background: (250, 250, 250);
     margin: 2rem auto;
-    padding: 0.6rem;
+    padding: 0.5rem;
   }
   
   .contact-info-container {
@@ -449,4 +449,12 @@ section {
   
   .email-icon {
     height: 2.5rem;
+  }
+
+  .github-stats>div{
+    text-align: center;
+  }
+
+  .github-streak-stats{
+    margin-top: 20px;
   }
