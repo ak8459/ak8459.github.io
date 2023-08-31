@@ -7,10 +7,9 @@
   font-family: "Lumanosimo", cursive;
 }
 
-
-
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -134,12 +133,6 @@
   margin-top: 50px;
 }
 
-/* #about h1 {
-  font-size: 45px;
-  color: #00A4BD;
- 
-  margin-bottom: 20px; 
-} */
 
 .psection>h1 {
   font-size: 45px;

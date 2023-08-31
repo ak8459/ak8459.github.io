@@ -26,12 +26,12 @@
   </section>
 
   home-section
-  <div id="home" class="title">
+  <section id="home" class="title">
     <h1 id="user-detail-name">AKASH SHARMA</h1>
     <h2>Full Stack Developer</h2>
     <a class="nav-link resume" href="#" id="resume-link-1" target="_blank">Resume <i
         class="fa-solid fa-download"></i></a>
-  </div>
+    </section>
 
   about-section
   <section id="about" class="about section psection">
@@ -117,17 +117,24 @@
 </script>
 
 
-</html> -->
+</html> 
+
+ -->
 
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" /> -->
+  
   <title>My Portfolio</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
   <link rel="stylesheet" href="./index.styles.css" />
 </head>
 
@@ -317,22 +324,29 @@
         </div>
       </div>
     </div>
-    
+
     <img src="./images1/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
 
   <section class="github-stats">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Github Statistics </h1>
-     <div class="github-streak-stats">
-       <img src="https://github-readme-streak-stats.herokuapp.com?user=ak8459" id="github-streak-stats" />
-       <img src="https://github-readme-stats.vercel.app/api?username=ak8459&show_icons=true" id="github-stats-card" />
-     </div>
-     <div>
-       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ak8459&layout=donut" alt=""
-         id="github-top-langs"> 
+    <div class="github-streak-stats">
+      <img src="https://github-readme-streak-stats.herokuapp.com?user=ak8459" id="github-streak-stats" />
+      <img src="https://github-readme-stats.vercel.app/api?username=ak8459&show_icons=true" id="github-stats-card" />
+    </div>
+    <div>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ak8459&layout=donut" alt=""
+        id="github-top-langs">
     </div>
   </section>
+
+  <section id="git-calendar">
+    <h1>My Github Calendar</h1>
+    <div class="calendar react-activity-calendar">
+    </div>
+  </section>
+
 
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -424,8 +438,8 @@
         </div>
       </div>
 
-      
- 
+
+
 
     </div>
     </div>
@@ -459,6 +473,14 @@
   </section>
 
 
+
 </body>
+
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+
+<script>
+  new GitHubCalendar(".calendar", "ak8459", { responsive: true });
+</script>
 
 </html>
