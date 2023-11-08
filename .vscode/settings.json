@@ -1,5 +1,6 @@
 {
     "html.format.enable": true,
     "cSpell.autoFormatConfigFile": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "liveServer.settings.port": 5501
 }
