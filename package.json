@@ -1,22 +1,4 @@
 {
-  "name": "ak8459.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ak8459/ak8459.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ak8459/ak8459.github.io/issues"
-  },
-  "homepage": "https://github.com/ak8459/ak8459.github.io#readme",
   "dependencies": {
     "github-calendar": "^2.3.2",
     "react-github-calendar": "^4.0.2"

@@ -486,13 +486,18 @@
       text-align: center;
       flex-direction: column;
       align-items: center;
-
+      
   }
 
   .contact-details p {
       margin: 10px 0;
       font-size: 1.2rem;
-
+      color: #1A237E;
+    
+  }
+  .contact-details-container {
+     text-align: justify;
+     
   }
 
   .contact-details a {
