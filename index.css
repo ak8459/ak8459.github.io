@@ -206,11 +206,12 @@
   #right-home>img {
       width: 250px;
       height: 250px;
-      border-radius: 20px;
-      padding: 10px;
+      border-radius: 50%;
+      padding: 2px;
+
       object-fit: cover;
       margin: auto;
-      background-color: #e5e6f0;
+      background-color: #a1a1a1;
   }
 
 
@@ -575,7 +576,7 @@
           width: 100%;
       }
 
-      
+
       #home {
           display: flex;
           flex-direction: column;
@@ -596,8 +597,10 @@
       .contact-div {
           display: flex;
           gap: 10px;
+          flex-direction: column;
           padding-top: 20px;
           padding-bottom: 20px;
+          align-items: center;
       }
 
       .contact-div>a {
@@ -729,6 +732,10 @@
           width: 90%;
 
       }
+      /* .git-calender{
+        border: 1px solid red;
+        width: 50%;
+      } */
 
       #github-stats-card img {
           width: 100%;
@@ -756,6 +763,7 @@
   @media only screen and (min-width: 481px) and (max-width: 767px) {
       .navbar {
           width: 100%;
+          max-width: 100%;
       }
 
       .right-navbar {
@@ -919,6 +927,10 @@
 
       #github-stats-card img {
           width: 100%;
+      }
+      .git-calender{
+        border: 1px solid red;
+        width: 50%;
       }
 
       #github {
