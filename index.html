@@ -12,7 +12,11 @@
 
   <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
   </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -36,6 +40,8 @@
           <a href="#projects" class="nav-link projects" onclick=myFunction()>PROJECT</a>
           <hr />
           <a href="#contact" class="nav-link contact" onclick=myFunction()>CONTACT</a>
+          <hr />
+          <a href="#resume-link-1" id="resume-button-1" class="nav-link resume" onclick=downloadResume()>RESUME</a>
         </ul>
       </div>
       <h3> <span class="first-letter">A</span>KASH <span class="first-letter">S</span>HARMA</h3>
@@ -48,9 +54,9 @@
       <a href="#projects" class="nav-link projects">Project</a>
       <a href="#contact" class="nav-link contact">Contact</a>
 
-      <a 
-        rel="noopener noreferrer" id="resume-link-1" id="resume-button-1" class="nav-link resume"
-        onclick="window.open('https://drive.google.com/file/d/1wvZcj1aU9Hm6J2BxiPX1N5UWo_k9EwHt/view?usp=drive_link', '_blank')">        
+      <a rel="noopener noreferrer" id="resume-link-1" id="resume-button-1" class="nav-link resume"
+        onclick="window.open('https://drive.google.com/file/d/1wvZcj1aU9Hm6J2BxiPX1N5UWo_k9EwHt/view?usp=drive_link', '_blank',)"
+        download >
         Resume
       </a>
 
@@ -188,18 +194,19 @@
 
         <div class="project-card">
           <div class="project-img">
-            <img src="./project-assest/edukin.png" alt="">
+            <img src="./project-assest/cara.png" alt="">
           </div>
-          <h2 class="project-title">Edukin</h2>
-          <p class="project-description">Edukin is an online learning skill-enhancing website.</p>
+          <h2 class="project-title">Cara</h2>
+          <p class="project-description">Step into Cara Store, where style meets simplicity. Explore our fashion-forward
+            clothing options for men and women,
+            effortlessly refine your choices.</p>
           <h3>Features:</h3>
           <ul class="list">
-            <li>User authentication to ensure secure access to the website</li>
-            <li>Filtering feature enabling users to refine product listings based on criteria such as Course,
-              price.</li>
+            <li>User login and registration</li>
+            <li>Filtering feature enabling users to refine product.</li>
             <li>Sorting and pagination</li>
-            <li>Single Product Page providing detailed information and specifications for individual
-              course details.</li>
+            <li>Single product page providing detailed information and specifications for individual
+              product details.</li>
           </ul>
           <h3 class="project-tech-stack">Tech Stack:</h3>
           <ul>
@@ -208,10 +215,11 @@
           <p>It is a group project that took 5 days to complete</p>
 
           <div id="project-link">
-            <a class="project-deployed-link" href="https://gleaming-rabanadas-c8636b.netlify.app/" target="_blank">
+            <a class="project-deployed-link"
+              href="https://658bfdbf38826a49fe269c6c--quiet-druid-e51254.netlify.app/pages/shop" target="_blank">
               <div>Demo</div>
             </a>
-            <a class="project-github-link" href="https://github.com/ak8459/mushy-apparatus-2910" target="_blank">
+            <a class="project-github-link" href="https://github.com/ak8459/Cara" target="_blank">
               <div>Github</div>
             </a>
           </div>
@@ -459,7 +467,7 @@
 
     <!-- ------------------------------------ Github end ---------------------------------------- -->
     <div id="github-calendar" class="git-calender">
-        
+
     </div>
     <!-- <script src="./index.js"></script> -->
 

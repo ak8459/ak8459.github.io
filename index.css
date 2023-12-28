@@ -4,7 +4,7 @@
   body {
       margin: 0px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+     
   }
 
   .navbar {
@@ -732,6 +732,7 @@
           width: 90%;
 
       }
+
       /* .git-calender{
         border: 1px solid red;
         width: 50%;
@@ -928,9 +929,10 @@
       #github-stats-card img {
           width: 100%;
       }
-      .git-calender{
-        border: 1px solid red;
-        width: 50%;
+
+      .git-calender {
+          border: 1px solid red;
+          width: 50%;
       }
 
       #github {
