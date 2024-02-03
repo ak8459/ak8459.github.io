@@ -21,7 +21,7 @@ function linkClick() {
 }
 
 function downloadResume() {
-    window.location.href = "https://drive.google.com/file/d/1wvZcj1aU9Hm6J2BxiPX1N5UWo_k9EwHt/view?usp=drive_link";
+    window.location.href = "https://shorturl.at/biyB6";
 }
 
 
