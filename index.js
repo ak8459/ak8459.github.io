@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function handleResumeClick(e) {
   e.preventDefault();
 
-  const fileId = "1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt";
+  const fileId = "1yBn-CjfU5MNKcAPcSLP2NRDEfkt-eN64";
 
   // Open PDF in new tab
   window.open(`https://drive.google.com/file/d/${fileId}/view`, "_blank");
@@ -339,6 +339,7 @@ function handleResumeClick(e) {
   const link = document.createElement("a");
   link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
   link.download = "Akash_Sharma_Resume.pdf";
+
   document.body.appendChild(link);
   link.click();
   link.remove();

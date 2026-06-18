@@ -314,6 +314,7 @@ h6 {
   color: #fff !important;
   padding: 8px 20px !important;
   font-weight: 600 !important;
+  cursor: pointer !important;
   box-shadow: 0 2px 12px var(--accent-glow);
 }
 
