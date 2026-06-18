@@ -311,19 +311,39 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(style);
 });
 // open and download resume
-document.getElementById("resumeBtn").addEventListener("click", function () {
-  // Open PDF in new tab
-  window.open(
-    "https://drive.google.com/file/d/1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt/view",
-    "_blank",
-  );
+// document.getElementById("resumeBtn").addEventListener("click", function () {
+//   // Open PDF in new tab
+//   window.open(
+//     "https://drive.google.com/file/d/1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt/view",
+//     "_blank",
+//   );
 
-  // Trigger download
+//   // Trigger download
+//   const link = document.createElement("a");
+//   link.href =
+//     "https://drive.google.com/uc?export=download&id=1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt";
+//   link.download = "Akash_Sharma_Resume.pdf";
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// });
+function handleResumeClick(e) {
+  e.preventDefault();
+
+  const fileId = "1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt";
+
+  // Open PDF in new tab
+  window.open(`https://drive.google.com/file/d/${fileId}/view`, "_blank");
+
+  // Download PDF
   const link = document.createElement("a");
-  link.href =
-    "https://drive.google.com/uc?export=download&id=1qpLOJUMoT85L8RkwioLTJINyCYOF3Wxt";
+  link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
   link.download = "Akash_Sharma_Resume.pdf";
   document.body.appendChild(link);
   link.click();
-  document.body.removeChild(link);
+  link.remove();
+}
+
+document.querySelectorAll(".download-resume-btn").forEach((btn) => {
+  btn.addEventListener("click", handleResumeClick);
 });
